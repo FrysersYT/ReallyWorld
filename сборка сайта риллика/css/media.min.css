@@ -1,0 +1,198 @@
+@media only screen and (max-width: 1280px) {
+    header {
+        display:-ms-grid;
+        display: grid;
+        -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+        gap: 0px 0px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    header nav,header .lc-button {
+        display: none
+    }
+
+    header .menu-button {
+        display: block;
+        z-index: 101
+    }
+
+    header #header_menu {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 100;
+        background: #f6f6f6;
+        margin: 0;
+        padding: 40px
+    }
+
+    header #header_menu ul li {
+        display: block;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content
+    }
+
+    header #header_menu ul li a {
+        font-size: 24px;
+        padding: 20px 30px
+    }
+
+    header #header_menu ul li i {
+        margin-right: 20px;
+        font-size: 16px
+    }
+
+    header #header_menu .active a::after {
+        display: none
+    }
+
+    .button_menu_fixed {
+        position: fixed;
+        right: 20px;
+        top: 31px
+    }
+
+    .flying,.block_6,.block_4 {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 1376px) {
+    #join_us .copy_ip {
+        -ms-grid-columns:1fr;
+        grid-template-columns: 1fr;
+        -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "." "."
+    }
+
+    #join_us .copy_ip>* {
+        -ms-grid-column-align: center;
+        justify-self: center
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    #join_us {
+        -ms-grid-columns:250px 1fr;
+        grid-template-columns: 250px 1fr;
+        -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: ". join_us_text" ". copy_ip"
+    }
+
+    #join_us .copy_ip>* {
+        -ms-grid-column-align: left;
+        justify-self: left
+    }
+}
+
+@media only screen and (max-width: 1394px) {
+    footer .wrapper {
+        display:-ms-grid;
+        display: grid;
+        grid-auto-columns: 1fr;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: ". ." ". ." "social social"
+    }
+
+    footer .wrapper .social {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-area: social;
+        text-align: left
+    }
+
+    footer .wrapper .nav,footer .wrapper .copyright {
+        text-align: right
+    }
+
+    footer .wrapper .nav nav,footer .wrapper .copyright nav {
+        display: -ms-grid;
+        display: grid;
+        grid-auto-columns: 1fr;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 0px 0px;
+        justify-items: right
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+    #social {
+        -ms-grid-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media only screen and (max-width: 1672px) {
+    #store_items {
+        -ms-grid-columns:(1fr)[5];
+        grid-template-columns: repeat(5, 1fr)
+    }
+
+    #store_items h3 {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 5;
+        grid-column: 1 / 6
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #store_items {
+        -ms-grid-columns:(1fr)[4];
+        grid-template-columns: repeat(4, 1fr)
+    }
+
+    #store_items h3 {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 4;
+        grid-column: 1 / 5
+    }
+}
+
+@media only screen and (max-width: 1128px) {
+    #store_items {
+        -ms-grid-columns:(1fr)[3];
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    #store_items h3 {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        grid-column: 1 / 4
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #store_coin {
+        display:-ms-grid;
+        display: grid;
+        -ms-grid-columns: 162px 1fr;
+        grid-template-columns: 162px 1fr;
+        -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: ". ." "buttons buttons"
+    }
+
+    #store_coin .to_pay_coin {
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-area: buttons
+    }
+}
+
+/*# sourceMappingURL=media-queries.min.css.map */
